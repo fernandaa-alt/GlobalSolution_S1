@@ -5,12 +5,15 @@
 
 body {
     min-height: 100vh;
-    background-color:rgb(236, 248, 228);
+    background-image: url(../images/troca-caixa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
-background-color: rgb(215, 243, 179);
+background-color: rgb(193, 231, 143);
 box-shadow: 3px 3px 5px rgb(174, 192, 154);
 }
 
@@ -34,12 +37,47 @@ nav a {
     align-items: center;
     color: rgb(0, 14, 4);
     font-weight: 600;
+    transition: 0.4s ease-in-out;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 nav a:hover {
-    background-color: #e6fdd0;
+    background-color: #deebbb;
 }
 
 nav li:first-child {
     margin-right: auto;
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(233, 233, 233, 0.541);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.sidebar a:hover {
+    background-color: #d8d4c3;
+}
+
