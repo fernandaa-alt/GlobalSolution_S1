@@ -5,7 +5,12 @@
 
 body {
     min-height: 100vh;
-    background-image: url(../images/troca-caixa.jpg);
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),   /* cima */
+            rgba(0, 0, 0, 0.45)    /* baixo */
+        ),
+        url('../images/troca-caixa.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,16 +18,59 @@ body {
 }
 
 main {
-    padding: 20px;
-    min-height: 80vh;
+    min-height: 65vh;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-body {
-    line-height: 1.6;
-    color: #333;
-    background: #f8ffdf;
+main section {
+    padding: 80px 60px;
+    margin-top: 70px;
+    background: rgba(255, 255, 240, 0.35);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    text-align: center;
 }
 
+main section h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #172410;
+    text-shadow: 0 2px 3px rgba(255,255,255,0.35);
+}
+
+main section h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #20291a;
+    max-width: 850px;
+    margin: 0 auto 30px auto;
+}
+
+main section a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 32px;
+    background: #a5d88d;
+    color: #2e3828;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+main section a:hover {
+    background:#222b1d;
+    color: #eeffe0;
+    transform: translateY(-3px);
+}
+
+
+/* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
@@ -42,7 +90,7 @@ nav .menu li a {
     text-decoration: none;
     transition: 0.3s;
     background-color: #6d9755;
-    padding: 8px 12px;
+    padding: 12px 12px;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -200,6 +248,14 @@ footer .social a:hover {
 
     .sidebar {
         width: 220px;
+    }
+
+    main section h1 {
+        font-size: 1.7rem;
+    }
+
+    main section h2 {
+        font-size: 1.1rem;
     }
 }
 
