@@ -1,0 +1,142 @@
+<!-- Essa página simula um usuário que já cadastrou e solicitou itens. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Painel - ReusoColetivo</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/painel.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="container-nav">
+                <a href="../index.html">
+                    <img src="./assets/.png" alt="logo ReusoColetivo" class="logo" />
+                </a>
+                <button id="hamburger" class="menu-icon">☰</button>
+            </div>
+
+            <ul class="menu">
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./como-funciona.html">Como Funciona</a></li>
+                <li><a href="./prototipo.html">Ferramenta</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./integrantes.html">Integrantes</a></li>
+                <li><a href="./meu-painel.html" class="active">Meu Painel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Meu Painel</h1>
+        <h2>Acompanhe seus itens cadastrados e solicitações em andamento</h2>
+
+        <!-- ITENS CADASTRADOS -->
+        <section class="panel-section">
+            <h3>Itens que você cadastrou</h3>
+
+            <div class="panel-grid">
+
+                <div class="panel-card">
+                    <h4>Cadeira de Escritório</h4>
+                    <p>Status: Disponível na galeria</p>
+                    <button class="details-btn">Ver detalhes</button>
+                </div>
+
+                <div class="panel-card">
+                    <h4>Monitor 24’’</h4>
+                    <p>Status: Aguardando solicitação</p>
+                    <button class="details-btn">Ver detalhes</button>
+                </div>
+
+                <div class="panel-card">
+                    <h4>Caixa de pastas suspensas</h4>
+                    <p>Status: 1 solicitação pendente</p>
+                    <button class="details-btn">Ver detalhes</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ITENS SOLICITADOS -->
+        <section class="panel-section">
+            <h3>Itens que você solicitou</h3>
+
+            <div class="panel-grid">
+
+                <div class="panel-card">
+                    <h4>Armário de Aço</h4>
+
+                    <div class="fluxo">
+                        <p><strong>Andamento da transferência:</strong></p>
+
+                        <ul class="fluxo-etapas">
+                            <li class="etapa ativa">Solicitação enviada</li>
+                            <li class="etapa ativa">Aguardando confirmação</li>
+                            <li class="etapa">Retirada autorizada</li>
+                            <li class="etapa">Concluído</li>
+                        </ul>
+                    </div>
+
+                    <button class="qr-btn">Gerar QR Code para Retirada</button>
+                </div>
+
+                <div class="panel-card">
+                    <h4>Conjunto de Mesas</h4>
+
+                    <div class="fluxo">
+                        <p><strong>Andamento da transferência:</strong></p>
+
+                        <ul class="fluxo-etapas">
+                            <li class="etapa ativa">Solicitação enviada</li>
+                            <li class="etapa">Aguardando confirmação</li>
+                            <li class="etapa">Retirada autorizada</li>
+                            <li class="etapa">Concluído</li>
+                        </ul>
+                    </div>
+
+                    <button class="qr-btn disabled">QR Code indisponível</button>
+                </div>
+
+                <div class="panel-card">
+                    <h4>Pacote de cabos HDMI</h4>
+
+                    <div class="fluxo">
+                        <p><strong>Andamento da transferência:</strong></p>
+
+                        <ul class="fluxo-etapas">
+                            <li class="etapa ativa">Solicitação enviada</li>
+                            <li class="etapa ativa">Aguardando confirmação</li>
+                            <li class="etapa ativa">Retirada autorizada</li>
+                            <li class="etapa">Concluído</li>
+                        </ul>
+                    </div>
+
+                    <button class="qr-btn">Gerar QR Code</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 ReusoColetivo. Todos os direitos reservados.</p>
+        <div class="social">
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

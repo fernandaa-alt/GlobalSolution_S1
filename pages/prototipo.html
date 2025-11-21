@@ -20,16 +20,166 @@
 
         <ul class="menu">
           <li><a href="./sobre.html">Sobre</a></li>
-          <li><a href="./solucao.html">Solução</a></li>
-          <li><a href="./prototipo.html">Protótipo</a></li>
+          <li><a href="./como-funciona.html">Como Funciona</a></li>
+          <li><a href="./prototipo.html">Acessar Ferramenta</a></li>
           <li><a href="./contato.html">Contato</a></li>
           <li><a href="./faq.html">FAQ</a></li>
           <li><a href="./integrantes.html">Integrantes</a></li>
+          <li><a href="./meu-painel.html">Meu Painel</a></li>
         </ul>
       </nav>
     </header>
     <main>
+       <!-- ==============================
+             1. REGISTRO DE NOVO PRODUTO
+        =============================== -->
+        <section id="registro-produto">
+            <h2>Registrar Item para Doação ou Troca</h2>
 
+            <form id="form-registro">
+                
+                <label for="nome-item">Nome do item:</label>
+                <input type="text" id="nome-item" name="nome-item" required>
+
+                <label for="categoria-item">Categoria:</label>
+                <select id="categoria-item" name="categoria-item" required>
+                    <option value="">Selecione</option>
+                    <option value="mobiliario">Mobiliário</option>
+                    <option value="eletronicos">Eletrônicos</option>
+                    <option value="ferramentas">Ferramentas</option>
+                    <option value="escritorio">Material de Escritório</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label for="estado-item">Estado do item:</label>
+                <select id="estado-item" name="estado-item" required>
+                    <option value="">Selecione</option>
+                    <option value="novo">Novo</option>
+                    <option value="usado-bom">Usado (bom estado)</option>
+                    <option value="usado-regular">Usado (regular)</option>
+                </select>
+
+                <label for="descricao-item">Descrição:</label>
+                <textarea id="descricao-item" name="descricao-item" rows="4"></textarea>
+
+                <button type="submit">Adicionar à Galeria</button>
+            </form>
+        </section>
+
+
+        <!-- ==============================
+             2. GALERIA DE PRODUTOS
+        =============================== -->
+        <section id="galeria-produtos">
+    <h2>Itens Disponíveis</h2>
+
+    <div class="lista-produtos">
+
+        <div class="card-produto">
+            <h3>Cadeira de Escritório</h3>
+            <p>Categoria: Mobiliário</p>
+            <p>Estado: Usado (bom estado)</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Monitor LED 24"</h3>
+            <p>Categoria: Eletrônicos</p>
+            <p>Estado: Usado (regular)</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Mesa de Reuniões</h3>
+            <p>Categoria: Mobiliário</p>
+            <p>Estado: Usado (bom estado)</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Teclado Mecânico</h3>
+            <p>Categoria: Eletrônicos</p>
+            <p>Estado: Novo</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Kit de Organizadores</h3>
+            <p>Categoria: Material de Escritório</p>
+            <p>Estado: Novo</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Projetor HD</h3>
+            <p>Categoria: Eletrônicos</p>
+            <p>Estado: Usado (bom estado)</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Armário de Aço</h3>
+            <p>Categoria: Mobiliário</p>
+            <p>Estado: Usado (regular)</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Caixa com Cabos HDMI</h3>
+            <p>Categoria: Eletrônicos</p>
+            <p>Estado: Novo</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Placas de EVA para Oficina</h3>
+            <p>Categoria: Ferramentas/Oficina</p>
+            <p>Estado: Novo</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Impressora a Laser</h3>
+            <p>Categoria: Eletrônicos</p>
+            <p>Estado: Usado (regular)</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Notebook antigo (funcional)</h3>
+            <p>Categoria: Eletrônicos</p>
+            <p>Estado: Usado (regular)</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Kit de Pastas e Arquivo Morto</h3>
+            <p>Categoria: Material de Escritório</p>
+            <p>Estado: Usado (bom estado)</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+        <div class="card-produto">
+            <h3>Extintor de Treinamento (vazio)</h3>
+            <p>Categoria: Outros</p>
+            <p>Estado: Usado</p>
+            <button class="btn-solicitar">Solicitar</button>
+        </div>
+
+    </div>
+</section>
+
+        <!-- ==============================
+             3. LINKS FINAIS
+        =============================== -->
+        <section id="links-finais">
+            <h2>Ações</h2>
+
+            <div class="acoes">
+                <a href="index.html">Voltar para Página Inicial</a>
+                <a href="painel-usuario.html">Acessar Meu Painel</a>
+            </div>
+        </section>
     </main>
     <footer>
         <p>© 2025 ReusoColetivo. Todos os direitos reservados.</p>
