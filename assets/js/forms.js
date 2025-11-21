@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 992) {
+      if (window.innerWidth > 1545) {
         menu.classList.remove("show");
       }
     });
