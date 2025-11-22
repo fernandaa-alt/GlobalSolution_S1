@@ -371,6 +371,164 @@ footer .social a:hover {
     transform: translateY(-2px);
 }
 
+/* ================================
+   ESTILO DA PÁGINA COMO FUNCIONA
+   ================================ */
+/* BODY */
+.cf-body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfff7;
+}
+ 
+/* MAIN */
+.cf-main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ 
+/* TÍTULOS PRINCIPAIS */
+.cf-main h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin: 60px 20px 20px 20px;
+    color: #1d2b16;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+ 
+.cf-main h2 {
+    font-size: 1.4rem;
+    color: #2c3826;
+    max-width: 850px;
+    margin: 0 auto 50px auto;
+    font-weight: 600;
+}
+ 
+/* SECTIONS */
+.cf-main section {
+    width: 100%;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2rem;
+}
+ 
+/* Alternância de cores */
+.cf-main section:nth-child(odd) {
+    background-color: #f9faf6;
+}
+ 
+.cf-main section:nth-child(even) {
+    background-color: #eef3e6;
+}
+ 
+/* CARDS */
+.cf-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+ 
+.cf-card {
+    flex: 1 1 200px;
+    max-width: 250px;
+    min-height: 180px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+.cf-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.16);
+}
+ 
+/* ETAPAS - GRID */
+.cf-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+ 
+/* Cards dentro do grid */
+.cf-steps-grid .cf-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #172410;
+}
+ 
+.cf-steps-grid .cf-card p {
+    font-size: 0.95rem;
+    color: #333d2d;
+    line-height: 1.6;
+}
+ 
+/* BOTÕES */
+.button-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+ 
+.button-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #172410;
+}
+ 
+.button-section a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 32px;
+    background: #b5d88d;
+    color: #2e3828;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+ 
+.button-section a:hover {
+    background: #0c0e0b;
+    color: #eeffe0;
+    transform: translateY(-3px);
+}
+ 
+/* FECHAMENTO */
+.cf-fechamento {
+    padding: 60px 20px;
+}
+ 
+.cf-fechamento p {
+    font-size: 1.1rem;
+    color: #333d2d;
+    max-width: 850px;
+    margin: 0 auto 25px auto;
+    line-height: 1.7;
+}
+ 
+.cf-fechamento h3,
+.cf-fechamento h4 {
+    font-weight: 600;
+    color: #2c3826;
+    margin: 15px 0;
+}
+
 
 /* =========================================================
    RESPONSIVIDADE — BREAKPOINTS
@@ -447,6 +605,37 @@ footer .social a:hover {
     }
  
     .sobre-main section a {
+        width: 100%;
+        text-align: center;
+    }
+
+     /* COMO FUNCIONA PAGE */
+    .cf-main h1 {
+        font-size: 1.8rem;
+        margin-top: 40px;
+    }
+ 
+    .cf-main h2 {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+ 
+    .cf-cards-row,
+    .cf-steps-grid,
+    .faq-contato {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+ 
+    .cf-card,
+    .faq-contato div {
+        width: 100%;
+        max-width: 100%;
+    }
+ 
+    .button-section a {
         width: 100%;
         text-align: center;
     }
