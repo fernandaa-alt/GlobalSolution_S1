@@ -927,6 +927,112 @@ form button:hover {
   line-height: 1.5;
 }
 
+/* ==============================
+   ESTILO DA PAGINA INTEGRANTES
+   ============================== */
+.hero {
+    background: #fbffe6;
+    text-align: center;
+    padding: 50px 20px;
+}
+ 
+.hero-top {
+    margin-bottom: 40px;
+}
+ 
+.hero-top h1 {
+    font-size: 2rem;
+    color: #006400;
+    margin-bottom: 10px;
+}
+ 
+.hero-panels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+ 
+/* Cards menores e estilizados */
+.hero-left,
+.hero-middle,
+.hero-right {
+    background: #daf5a7;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 500px;
+    /* largura base menor */
+    max-width: 500px;
+    /* limita para não ficar gigante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+ 
+.hero-left:hover,
+.hero-middle:hover,
+.hero-right:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+ 
+.hero-left img,
+.hero-middle img,
+.hero-right img {
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid #efffd1;
+}
+ 
+.hero-left h2,
+.hero-middle h2,
+.hero-right h2 {
+    font-size: 2rem;
+    color: #314d1f;
+    margin-bottom: 6px;
+}
+ 
+.hero-left p,
+.hero-middle p,
+.hero-right p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 4px 0;
+}
+ 
+.membro-rede {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background: #f7ffe8;
+    color: rgb(105, 139, 50);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: background 0.3s ease;
+    min-width: 110px;
+}
+ 
+.membro-rede:hover {
+    background: #365a19;
+    color: white;
+}
+ 
+form {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 /* =========================================================
    RESPONSIVIDADE — BREAKPOINTS
    ========================================================= */
@@ -1050,6 +1156,27 @@ form button:hover {
     form {
         padding: 30px 20px;
         width: 400px;
+    }
+
+    /* HERO INTEGRANTES */
+    .hero-panels {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .hero-left,
+    .hero-middle,
+    .hero-right {
+        max-width: 90%;
+    }
+ 
+    .painel-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .painel-card {
+        max-width: 90%;
     }
 
 }
