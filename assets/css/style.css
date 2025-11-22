@@ -728,6 +728,132 @@ main h3 {
     transform: translateY(-3px);
 }
 
+/* ================================
+   ESTILO DA PÁGINA CONTATO
+   ================================ */
+/* BODY */
+.contato-pagina {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f8f2;
+    color: #1f2c17;
+}
+ 
+/* MAIN */
+.contato-pagina main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+ 
+/* TÍTULOS */
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1f2c17;
+}
+ 
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #2e3826;
+}
+ 
+/* FORMULÁRIO */
+form {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+ 
+}
+ 
+form label {
+    font-weight: 600;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+ 
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #cfd9c5;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+    resize: vertical;
+}
+ 
+form input:focus,
+form textarea:focus {
+    border-color: #91c66e;
+    outline: none;
+    box-shadow: 0 0 8px rgba(145, 198, 110, 0.4);
+}
+ 
+form button {
+    padding: 14px;
+    background-color: #91c66e;
+    color: #1f2c17;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+ 
+form button:hover {
+    background-color: #0c0e0b;
+    color: #eeffe0;
+    transform: translateY(-3px);
+}
+ 
+/* FAQ / REDIRECT */
+.faq-redirect {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+ 
+.faq-redirect h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+ 
+.faq-redirect a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #b5d88d;
+    color: #1f2c17;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.25s ease;
+}
+ 
+.faq-redirect a:hover {
+    background: #0c0e0b;
+    color: #eeffe0;
+    transform: translateY(-2px);
+}
+
 /* =========================================================
    RESPONSIVIDADE — BREAKPOINTS
    ========================================================= */

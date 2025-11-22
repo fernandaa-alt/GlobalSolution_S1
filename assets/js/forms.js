@@ -33,3 +33,38 @@ botoesSolicitar.forEach(botao => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector(".form form");
+ 
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+ 
+        const email = document.getElementById("email").value.trim();
+        const telefone = document.getElementById("telefone").value.trim();
+ 
+        // Regex para email simples
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ 
+        // Regex para telefone
+        const telefoneRegex = /^(\(?\d{2}\)?\s?)?[\d\s-]{8,11}$/;
+ 
+        let errors = [];
+ 
+        if (!emailRegex.test(email)) {
+            errors.push("Por favor, insira um email válido.");
+        }
+ 
+        if (!telefoneRegex.test(telefone)) {
+            errors.push("Por favor, insira um telefone válido.");
+        }
+ 
+        if (errors.length > 0) {
+            alert(errors.join("\n"));
+            return false;
+        }
+ 
+        alert("Formulário enviado com sucesso!");
+        form.reset();
+    });
+});
