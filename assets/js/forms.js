@@ -68,3 +68,24 @@ document.addEventListener("DOMContentLoaded", () => {
         form.reset();
     });
 });
+
+// Botões de detalhes FAQ
+    const detailsButtons = document.querySelectorAll(".details-btn");
+ 
+    detailsButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            alert("Aqui você pode abrir os detalhes do item!");
+        });
+    });
+ 
+document.addEventListener('DOMContentLoaded', function() {
+  const faqItems = document.querySelectorAll('.faq-item');
+ 
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+ 
+    question.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+});
