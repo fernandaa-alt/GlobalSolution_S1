@@ -16,3 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+//===== CARDS PRODUTOS - BOTÃO SOLICITAR =====
+const botoesSolicitar = document.querySelectorAll('.btn-solicitar');
+ 
+botoesSolicitar.forEach(botao => {
+    botao.addEventListener('click', () => {
+        const card = botao.closest('.produto-card');
+ 
+        if(!card.classList.contains('solicitado')){
+            card.classList.add('solicitado');
+            botao.textContent = 'Solicitado';
+        } else {
+            card.classList.remove('solicitado');
+            botao.textContent = 'Solicitar';
+        }
+    });
+});

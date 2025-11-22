@@ -529,6 +529,204 @@ footer .social a:hover {
     margin: 15px 0;
 }
 
+/* ================================
+   ESTILO DA PÁGINA PRODUTOS
+   ================================ */
+ 
+/* BODY */
+.produtos-pagina {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9faf6;
+}
+ 
+/* MAIN */
+.produtos-pagina main {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+ 
+/* TÍTULOS */
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1f2c17;
+}
+ 
+main h3 {
+    font-size: 1.2rem;
+    color: #2e3826;
+    margin-bottom: 20px;
+}
+ 
+/* FORMULÁRIO DE REGISTRO */
+#registro-produto {
+    background: linear-gradient(135deg, #ecffce 0%, #c1e497 100%);
+    padding: 50px 20px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+ 
+#form-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+ 
+#form-registro label {
+    font-weight: 600;
+    color: #2c3826;
+}
+ 
+#form-registro input[type="text"],
+#form-registro input[type="file"],
+#form-registro select,
+#form-registro textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #cfd9c5;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+ 
+#form-registro input:focus,
+#form-registro select:focus,
+#form-registro textarea:focus {
+    border-color: #91c66e;
+    outline: none;
+    box-shadow: 0 0 8px rgba(145, 198, 110, 0.4);
+}
+ 
+#form-registro button {
+    padding: 14px;
+    background-color: #91c66e;
+    color: #1f2c17;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+ 
+#form-registro button:hover {
+    background-color: #0c0e0b;
+    color: #eeffe0;
+    transform: translateY(-3px);
+}
+ 
+/* GALERIA DE PRODUTOS */
+#produtos-galeria {
+    width: 100%;
+    padding: 50px 20px;
+}
+ 
+.produtos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+ 
+.produto-card {
+    background: #ffffff;
+    border-radius: 20px;
+    width: 250px;
+    /* largura fixa */
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.produto-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 1px solid #d9e3d0;
+}
+ 
+.produto-card h3 {
+    margin: 15px 10px 10px 10px;
+    font-size: 1.2rem;
+    color: #1f2c17;
+}
+ 
+.produto-card p {
+    font-size: 0.95rem;
+    color: #2e3826;
+    margin: 3px 0;
+}
+ 
+.produto-card button.btn-solicitar {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #91c66e;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #1f2c17;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+ 
+.produto-card button.btn-solicitar:hover {
+    background: #0c0e0b;
+    color: #eeffe0;
+    transform: translateY(-2px);
+}
+ 
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+ 
+/* BOTÃO DE ITEM SOLICITADO */
+.produto-card.solicitado {
+    background: #d4edda;
+    border: 2px solid #91c66e;
+}
+ 
+.produto-card.solicitado button {
+    background: #6c9e4b;
+    color: #ffffff;
+}
+ 
+/* LINKS FINAIS */
+#produtos-links-finais {
+    padding: 60px 20px;
+    text-align: center;
+}
+ 
+.produtos-acoes a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 14px 32px;
+    background: #b5d88d;
+    color: #1f2c17;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+ 
+.produtos-acoes a:hover {
+    background: #0c0e0b;
+    color: #eeffe0;
+    transform: translateY(-3px);
+}
 
 /* =========================================================
    RESPONSIVIDADE — BREAKPOINTS
@@ -638,6 +836,21 @@ footer .social a:hover {
     .button-section a {
         width: 100%;
         text-align: center;
+    }
+
+    /* PRODUTOS PAGE */
+    .produto-card {
+        width: 90%;
+    }
+ 
+    .produtos-acoes a {
+        width: 100%;
+        margin: 8px 0;
+    }
+ 
+    form {
+        padding: 30px 20px;
+        width: 400px;
     }
 
 }
