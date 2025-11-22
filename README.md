@@ -4,8 +4,12 @@
 O ReusoColetivo é uma plataforma web desenvolvida para conectar empresas que possuem recursos, materiais e equipamentos excedentes a empresas que precisam desses itens.
 A proposta é incentivar o reuso, sustentabilidade, economia circular e reduzir o desperdício.
 
-Link do git:
-Link do Site:
+### 🔗 Link do site: https://fernandaa-alt.github.io/GlobalSolution_S1/
+### 🔗 Link do Git: https://github.com/fernandaa-alt/GlobalSolution_S1.git
+
+### 👤 Integrantes:
+* [Alessandro - RM567769](https://github.com/aleupms)
+* [Fernanda - RM567826](https://github.com/fernandaa-alt)
 
 ## ✨ Funcionalidades
 
