@@ -89,3 +89,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Botões de QR Code
+  const qrButtons = document.querySelectorAll(".qr-btn");
+
+  qrButtons.forEach((btn) => {
+    if (!btn.classList.contains("disabled")) {
+      btn.addEventListener("click", () => {
+        alert("QR Code gerado! (Exemplo)");
+      });
+    }
+  });
+});
